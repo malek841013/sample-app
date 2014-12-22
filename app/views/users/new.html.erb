@@ -6,10 +6,10 @@
 		<%= form_for(@user) do |f| %>
 			<%= render 'shared/error_messages' %>
 
-			<%= f.label :name %>
+			<%= f.label :name, "User Name" %>
 			<%= f.text_field :name, class: 'form-control' %>
 
-			<%= f.label :email %>
+			<%= f.label :email, "Email(Correct and Present email Address)" %>
 			<%= f.text_field :email, class: 'form-control' %>
 
 			<%= f.label :password %>
